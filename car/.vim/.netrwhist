@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/aadc/Arduino/libraries/AADC_Com'
+let g:netrw_dirhist_2='/home/aadc/AADC/config/LiveVisualizationConfig'
+let g:netrw_dirhist_3='/home/aadc/AADC/config/LiveVisualizationConfig/config'
+let g:netrw_dirhist_4='/home/aadc/Arduino/clone_aadc'
+let g:netrw_dirhist_5='/home/aadc/Arduino/.git'
+let g:netrw_dirhist_6='/home/aadc/Arduino/.git/objects'
+let g:netrw_dirhist_7='/home/aadc/AADC/src/aadcBase/src/arduino/AADC_ArduinoCommunication'
+let g:netrw_dirhist_8='/home/aadc/Arduino/aadc/src'
