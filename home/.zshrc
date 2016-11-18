@@ -5,7 +5,7 @@
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="bira"
+ZSH_THEME="my"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -49,7 +49,7 @@ ZSH_THEME="bira"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git, colored-man-pages, debian)
+plugins=(git colored-man-pages debian alias-tips)
 
 # User configuration
 
@@ -82,6 +82,15 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias o=gnome-open
-alias st="git status"
+# alias o=gnome-open
+# alias st="git status"
+alias db=dropbox
 export QTDIR=/opt/qt/4.7.1
+
+o(){
+    gnome-open $1 > /dev/null 2>&1
+}
+
+ff(){
+    grep -rn $1 *
+}

@@ -1,0 +1,1 @@
+/home/miraculix/dotfiles/home/.vim
