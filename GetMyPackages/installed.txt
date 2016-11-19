@@ -98,3 +98,4 @@ xbindkeys-config
 zip						
 zsh						
 zsh-common
+grub-customizer
