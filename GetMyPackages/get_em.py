@@ -21,12 +21,16 @@ def read_args(cmdline=None):
     return args
 
 
-def install_all(content):
+def install_all(content, dry_run=False):
     malfunctioned = []
     for line in content:
         try:
-            check_call(['apt-get', 'install', '-y', line])
-            break
+            if not dry_run:
+                check_call(['apt-get', 'install', '-y', line])
+                continue
+            else:
+                check_call(['apt-get', 'install', '-y', '-s', line])
+                continue
         except CalledProcessError:
             malfunctioned.append(line)
     return malfunctioned
@@ -60,6 +64,16 @@ def install_via_wget(content):
     return err_downl, err_unzip
 
 
+def get_content(filename):
+    f = open(filename, 'r')
+    content = []
+    for line in f:
+        if line[0] != '#':
+            content.append(line.strip())
+    f.close()
+    return content
+
+
 def main():
     args = read_args()
     if not args.wget:
@@ -69,11 +83,7 @@ def main():
             if e[0] == errno.EPERM:
                 print("You need root permissions to do this, laterz!")
                 sys.exit(1)
-    f = open(args.filename, 'r')
-    content = []
-    for line in f:
-        if line[0] != '#':
-            content.append(line.strip())
+    content = get_content(args.filename)
     if not args.wget:
         mal = install_all(content)
         if mal:
@@ -94,4 +104,6 @@ def main():
                 print(m)
         else:
             print('All packages were installed successfully')
-main()
+
+if __name__ == "__main__":
+    main()
