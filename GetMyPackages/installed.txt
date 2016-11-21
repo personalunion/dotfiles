@@ -15,9 +15,6 @@ codeblocks
 codeblocks-common				
 codeblocks-contrib				
 codeblocks-contrib-common			
-codeblocks-libwxcontrib0													
-dcpl2520dwcupswrapper				
-dcpl2520dwlpr			
 dia						
 dia-common					
 dia-libs					
@@ -29,8 +26,6 @@ gimp-data
 gist						
 git						
 git-man						
-gitkraken					
-google-chrome-stable				
 gparted						
 gpgv						
 graphicsmagick					
@@ -86,16 +81,13 @@ vlc
 vlc-data					
 vlc-nox						
 vlc-plugin-notify				
-vlc-plugin-pulse				
 wget											
 wine-devel					
-wine-devel-amd64				
-wine-devel-i386					
-winehq-devel					
 winetricks									
 xbindkeys					
 xbindkeys-config				
 zip						
 zsh						
 zsh-common
-grub-customizer
+gparted
+libgnome2-bin

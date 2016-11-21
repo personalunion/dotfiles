@@ -1,0 +1,4 @@
+#https://download-cf.jetbrains.com/python/pycharm-professional-2016.2.3.tar.gz -> dir -> use
+#https://github.com/meetfranz/franz-app/releases/download/4.0.4/Franz-linux-x64-4.0.4.tgz -> dir -> use
+#http://download.brother.com/welcome/dlf006893/linux-brprinter-installer-2.0.0-1.gz -> chmod -> execute
+#https://www.gitkraken.com/download/linux-deb -> .deb package
